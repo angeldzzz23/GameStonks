@@ -4,6 +4,7 @@ package com.company;
 public class LogginInController implements  UserInfo {
 
     private User usr; // the user that is currenly logged in
+    private AccountsModels am; // for createNewUser function
 
     // takes care of the loggin of the user
     private User loggingInTheUser() {
@@ -17,7 +18,10 @@ public class LogginInController implements  UserInfo {
         String pass;
         String emai;
 
+            System.out.println("\n\n====================\n");
+
         do {
+
             logView.askForEmail();
             emai = input.getEmail();
             isValidEmail = EmailValidation.validate(emai);
@@ -65,7 +69,8 @@ public class LogginInController implements  UserInfo {
                 logInUser(acc);
                 break;
             case  "2":  // creating an account
-                createAccount();
+                acc.createNewUser();
+                logInUser(acc);
                 break;
         }
 

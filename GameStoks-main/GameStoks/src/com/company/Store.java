@@ -30,15 +30,20 @@ class Game {
 public class Store {
     // TODO: can probably replace with vector
     private final Game[] games = new Game[100];
-    private int totalGames = 5;
+    private int totalGames = 9;
 
     Store() {
         // here you can paste the amount files that you want
-        Game game1 = new Game("red dead redemeption", 60, 30);
-        Game game2 = new Game("Minecraft", 60, 30);
-        Game game3 = new Game("GTA 5", 90, 0);
-        Game game4 = new Game("COD 3", 60, 15);
-        Game game5 = new Game("cod 2", 25, 30);
+        Game game1 = new Game("Red Dead Redemeption",      60, 30);
+        Game game2 = new Game("Minecraft",                 60, 30);
+        Game game3 = new Game("GTA 5",                     90, 0);
+        Game game4 = new Game("COD: Black Ops 2",          60, 15);
+        Game game5 = new Game("COD: World War II",         25, 30);
+        Game game6 = new Game("Super Smash Bros Ultimate", 50, 5);
+        Game game7 = new Game("Genshin Impact",            10, 7);
+        Game game8 = new Game("Kingdom Hearts 2",          15, 1);
+        Game game9 = new Game("Epic Rap Battles of 2013",  100, 69);
+
         SpecialEdition game6Lit = new SpecialEdition("GT5 limited edition", 300, 30,"red hat");
 
         games[0] = game1;
@@ -46,6 +51,10 @@ public class Store {
         games[2] = game3;
         games[3] = game4;
         games[4] = game5;
+        games[5] = game6;
+        games[6] = game7;
+        games[7] = game8;
+        games[8] = game9;
     }
 
 
