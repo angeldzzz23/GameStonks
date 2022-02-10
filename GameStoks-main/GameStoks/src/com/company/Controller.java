@@ -5,6 +5,7 @@ import java.text.ParseException;
 public class Controller {
         User user;
         AccountsModels account; // this is where all of
+        String border = "\n\n====================\n";
 
     Controller() throws ParseException {
 
@@ -17,10 +18,12 @@ public class Controller {
         // logging controller
         LogginInController logControl = new LogginInController(account);
         user = logControl.getCurrentUser();
+        System.out.println(border);
 
         // adding products to cart
         ControllerStore controllgerStore = new ControllerStore(user);
         user = controllgerStore.getCurrentUser();
+        System.out.println(border);
 
         // continue to delivery options
         ScheduledDeliveryController schedule = new ScheduledDeliveryController();

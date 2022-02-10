@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="production">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/GameStoks/out/production.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -31,4 +31,8 @@ public class Cart {
         return itemsIntCart;
     }
 
+    void showCart() {
+
+    }
+
 }

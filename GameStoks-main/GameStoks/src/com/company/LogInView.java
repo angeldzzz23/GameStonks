@@ -18,11 +18,11 @@ public class LogInView implements View {
     }
 
     void askForEmail() {
-       System.out.println("enter your email: ");
+       System.out.print("Enter your email: ");
     }
 
     void askForPassword() {
-        System.out.println("enter your password: ");
+        System.out.print("\nEnter your password: ");
     }
 
 }

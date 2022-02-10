@@ -6,7 +6,7 @@ public class DateView implements View {
 
     }
     void enterDateDisplay() {
-        System.out.println("enter date in this format: MM/dd/yyyy");
+        System.out.println("Checkout/Delivery\n\nEnter date in this format: MM/dd/yyyy");
     }
 
 
